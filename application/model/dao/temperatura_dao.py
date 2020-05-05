@@ -1,0 +1,1 @@
+from application.model.entity.temperatura import Temperatura
