@@ -24,3 +24,11 @@ class Umidade:
     def set_cliente(self,cliente):
         self._cliente = cliente
 
+    def toDict(self):
+        return {
+            'id' : self._id,
+            'data' : self._data,
+            'valor' : self._valor,
+            'cliente' : self._cliente.toDict()
+        }
+
